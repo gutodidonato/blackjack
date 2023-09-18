@@ -48,7 +48,7 @@ def blackjack(jogador):
     acumuladora2 = 0
     acumuladora += primeira_jogada(jogador)
     acumuladora2 += primeira_jogada("CPU")
-     # Player's turn
+     # Player`s turn
     acumuladora = comprar_ou_parar(jogador, acumuladora)
     atualizar(acumuladora, jogador)
     print("\n")
