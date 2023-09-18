@@ -1,4 +1,5 @@
 import random as r
+from art import logo
 
 
 pontos_jogador= 0
@@ -35,6 +36,7 @@ def comprar_ou_parar(jogador, pontos):
     if decisao == "comprar" or decisao == "comp" or decisao == "sim":
         pontos += pedir(jogador)
         if pontos <= 21:
+            print(f"Você está com {pontos}")
             return comprar_ou_parar(jogador, pontos)
     return pontos
     
@@ -43,6 +45,7 @@ def atualizar(acumulador, jogador):
     
 
 def blackjack(jogador):
+    print(logo)
      # First two cards for both players
     acumuladora = 0 
     acumuladora2 = 0
@@ -68,6 +71,7 @@ def blackjack(jogador):
     print(f"Fim do jogo. \n")
     continuar = input(f"Deseja continuar?")
     if continuar == "sim" or continuar == "s" or continuar == "yes":
+        print("\n"*50)
         blackjack(jogador)
     
     
