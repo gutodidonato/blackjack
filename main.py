@@ -14,5 +14,9 @@ def pegar_carta():
 def blackjack():
     primeira_carta = pegar_carta
     segunda_carta = pegar_carta
+    if primeira_carta == 1:
+        primeira_carta = 11
+    elif segunda_carta == 1:
+        segunda_carta == 11
     print(f"Você recebeu {primeira_carta} e um {segunda_carta}")
     
